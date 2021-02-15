@@ -1,3 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
 body {
-  background-color: firebrick;
+  background-color: white;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+.containerBanner {
+  width: 100vw;
+  height: 10vh;
+  background-color: white;
+  box-shadow: 0 0 20px rgb(221, 221, 221);
+  position: fixed;
+}
+.banner {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bannerLeft {
+  width: 30%;
+  --background-image: url("img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bannerImg {
+  object-fit: contain;
+  width: 31%;
+}
+.bannerImg:hover {
+  object-fit: contain;
+  width: 32%;
+  cursor: pointer;
+}
+.bannerRight {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bannerButtons {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.05s;
+  width: auto;
+  padding: 1vw;
+  font-size: 1.6vw;
+  background-color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.bannerButtons:hover {
+  border-bottom: yellowgreen 3px solid;
+  font-weight: bold;
+  font-size: 1.7vw;
+}
+.content {
+  padding-top: 10vh;
+  width: 100%;
+  margin: 0;
+}
+.slider {
+  width: 100%;
+  height: 90vh;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-image: url("img/s1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.sliderBut {
+  width: 20vw;
+  height: 90vh;
+  font-size: 25vw;
+  text-align: center;
+  color: rgba(15, 200, 46, 0.246);
+}
+.sliderBut:hover {
+  font-size: 26vw;
+  color: rgba(3, 219, 39, 0.726);
+  cursor: pointer;
+}
+.sliderInfo {
+  width: 40vw;
+  height: 90vh;
 }
