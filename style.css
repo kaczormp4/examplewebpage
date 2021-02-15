@@ -88,19 +88,31 @@ a:active {
   display: flex;
   justify-content: space-between;
 }
+
 .sliderBut {
   width: 20vw;
   height: 90vh;
   font-size: 25vw;
   text-align: center;
   color: rgba(15, 200, 46, 0.246);
+  text-shadow: 10px 10px #0000006b;
 }
 .sliderBut:hover {
   font-size: 26vw;
   color: rgba(3, 219, 39, 0.726);
+  text-shadow: 1px 1px #0000006b;
   cursor: pointer;
 }
 .sliderInfo {
   width: 40vw;
   height: 90vh;
+  text-align: center;
+  padding-top: 15vh;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.sliderH1 {
+  font-size: 6vw;
+  text-shadow: 2px 2px 5px #ffffff, -2px -2px 5px #ffffff,
+    0px 0px 15px rgb(255, 255, 255);
 }
