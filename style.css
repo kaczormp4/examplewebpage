@@ -232,8 +232,13 @@ a:active {
   height: 100%;
   --background-color: saddlebrown;
   background-image: url("img/s1.png");
-  background-size: 100%;
+  /* background-size: 100%;
+  background-size: contain; */
+  background-size: cover;
   background-repeat: no-repeat;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.97, 0.59);
+  border-radius: 1vw;
 }
 .g-ImagesBox {
   width: 80%;
