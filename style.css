@@ -182,6 +182,7 @@ a:active {
   padding-top: 2vw;
   padding-bottom: 2vw;
   cursor: pointer;
+  word-wrap: break-word;
 }
 
 .lastBox > a > img {

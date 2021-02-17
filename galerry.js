@@ -28,16 +28,15 @@ function gallerySlider(max){
         let newstr = currentImg.replace('url("img/s', '');
         newstr = newstr.replace('.png")', '');
         newstr = parseInt(newstr);
-        console.log(newstr)
-        
+
         if(newstr<=1){
-            console.log("s->>>>>",newstr)
+
             slider.style.backgroundImage =`url("img/s${max}.png")`;
-            console.log("sdsdsasd",newstr)
+
         }
         else{
             slider.style.backgroundImage =`url("img/s${newstr-1}.png")`;
-            console.log("s----------- ",newstr)
+
 
         }   
     }
@@ -52,7 +51,7 @@ function gallerySlider(max){
         let newstr = currentImg.replace('url("img/s', '');
         newstr = newstr.replace('.png")', '');
         newstr = parseInt(newstr);
-        console.log(newstr)
+
         
         if(newstr>=max){
             slider.style.backgroundImage =`url("img/s${1}.png")`;
