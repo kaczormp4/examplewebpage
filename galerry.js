@@ -21,7 +21,6 @@ function gallerySlider(max){
         
     }
 
-
     const goLeft = () =>{
 
         let currentImg = slider.style.backgroundImage ;
@@ -30,16 +29,13 @@ function gallerySlider(max){
         newstr = parseInt(newstr);
 
         if(newstr<=1){
-
             slider.style.backgroundImage =`url("img/s${max}.png")`;
-
         }
         else{
             slider.style.backgroundImage =`url("img/s${newstr-1}.png")`;
-
-
         }   
     }
+    
     const goRight = () =>{
 
         if(min == 0){
@@ -47,6 +43,7 @@ function gallerySlider(max){
             slider.style.backgroundImage =`url("img/s${min}.png")`;           
             min++;
         }
+        
         let currentImg = slider.style.backgroundImage ;
         let newstr = currentImg.replace('url("img/s', '');
         newstr = newstr.replace('.png")', '');
@@ -64,5 +61,6 @@ function gallerySlider(max){
     sliderButLeft.addEventListener('click',goLeft);
     sliderButRight.addEventListener('click',goRight);
 }
-
+//arg "gallerySlider()" = number of images
+//images must be in img folder ..example of name "s2.png"
 gallerySlider(6);
