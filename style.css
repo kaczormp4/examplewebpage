@@ -201,7 +201,12 @@ a:active {
 .lastBox > a:hover {
   color: purple;
 }
-
+.lastBox > a > span {
+  color: grey;
+}
+.lastBox > a > span:hover {
+  color: purple;
+}
 /*================
       GALLERY
 ================*/
