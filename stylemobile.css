@@ -1,0 +1,87 @@
+@media only screen and (max-width: 799px) {
+  /*================
+      NAW MENU + LOGO
+  ================*/
+  .containerBanner {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(221, 221, 221);
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+  }
+  .banner {
+    width: 100%;
+  }
+  .bannerLeft {
+    position: fixed;
+    width: 100vw;
+    height: 13vw;
+    top: 0px;
+    background-color: white;
+  }
+  .bannerImg {
+    position: fixed;
+    width: 30vw;
+    top: 0;
+    left: 35vw;
+    padding-top: 2vw;
+  }
+
+  .bannerPhoneNumber {
+    display: none;
+  }
+  .bannerRight {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .bannerButtons {
+    font-size: 6vw;
+    transition-timing-function: none;
+    transition-duration: 0s;
+    font-weight: bold;
+  }
+  .bannerButtons:hover {
+    background-color: yellowgreen;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 6vw;
+  }
+  .bannerButtons:active {
+    background-color: yellowgreen;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 6vw;
+  }
+  .bannerSVG {
+    display: block;
+    width: 15vw;
+    margin: auto;
+    opacity: 0.7;
+  }
+  .bannerSVG:active {
+    opacity: 1;
+  }
+
+  /*================
+      content
+================*/
+  .content {
+    padding-top: 17vh;
+  }
+  .slider {
+    width: 100%;
+    height: 30vh;
+    transition-duration: 0s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-image: url("img/s1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+}
