@@ -69,19 +69,147 @@
       content
   ================*/
   .content {
-    padding-top: 17vh;
+    padding-top: 11vh;
   }
   .slider {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     transition-duration: 0s;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background-image: url("img/s1.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     -webkit-user-select: none;
     -moz-user-select: none;
   }
+  .sliderBut {
+    width: 20vw;
+    height: 40vh;
+    font-size: 30vw;
+    line-height: 30vh;
+    text-align: center;
+    color: rgba(15, 200, 46, 0.246);
+    text-shadow: 10px 10px #0000006b;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+  .sliderBut:hover, .sliderBut:active{
+    font-size: 26vw;
+    color: rgba(3, 219, 39, 0.726);
+    text-shadow: 1px 1px #0000006b;
+    cursor: pointer;
+  }
+  .sliderInfo {
+    width: 40vw;
+    height: 40vh;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .sliderH1 {
+    font-size: 8vw;
+    font-family: "Anton", sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px #ffffff, -5px -5px 5px #ffffff,
+      0px 0px 15px rgb(255, 255, 255);
+    position: absolute;
+    margin: auto;
+    top:10vh ;
+    left: auto ;
+    transform: none;
+    -webkit-text-fill-color: none;
+    -webkit-text-stroke-width: none;
+    -webkit-text-stroke-color: none(0, 0, 0);
+
+  }
+  .offerTitle {
+    font-size: 10vw;
+  }
+  .offer {
+    width: 88%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .offerBox {
+    width: 40vw;
+    height: 40vw;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.233);
+    margin-top: 2vw;
+  }
+  .offerBox > img {
+    padding-top: 2vw;
+    width: 25vw;
+    transition-duration: 1.2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .offerBox:hover > img {
+    transform: rotateY(360deg);
+  }
+  .offerBox > h1 {
+    font-size: 6.5vw;
+  }
+  .lastBox {
+    margin-top: 5vw;
+    margin-bottom: 25vw;
+    font-size: 6vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+  }
+  /*================
+      GALLERY
+  ================*/
+  .g-sliderBox {
+    width: 100%;
+    height: 70vw;
+    margin: auto;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .g-sliderBox-butoons {
+    align-self:flex-end;
+    order: 2;
+    line-height: auto;
+    height:30%;
+    font-size: 25vw;
+    transition-duration: 0.2s;
+    text-shadow: 5px 5px #0000006b;
+  }
+  .g-sliderBox-butoons:hover,.g-sliderBox-butoons:active {
+    font-size: 26vw;
+  }
+  .g-sliderBox-Content {
+    width:100%;
+    order: 1;
+    align-self:flex-start;
+    height: 70%;
+    background-size: cover;
+  }
+  .g-ImagesBox {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .g-ImagesBox-smallBoxes {
+    width: 30vw;
+    height: 30vw;
+    margin: 1vw;
+  }
+  .g-ImagesBox-smallBoxes:hover {
+    border: 4px green solid;
+  }
+
 }
