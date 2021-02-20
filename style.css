@@ -93,7 +93,7 @@ a:active {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background-image: url("img/s1.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
@@ -165,7 +165,7 @@ a:active {
   transition-duration: 1.2s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.offerBox > img:hover {
+.offerBox:hover > img {
   transform: rotateY(360deg);
 }
 .lastBox {
@@ -235,7 +235,7 @@ a:active {
   background-image: url("img/s1.png");
   /* background-size: 100%;
   background-size: contain; */
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0.17, 0.67, 0.97, 0.59);
