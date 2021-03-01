@@ -217,5 +217,6 @@
   }
   .lastBox > a > span:hover {
     color: purple;
+    
   }
 }
